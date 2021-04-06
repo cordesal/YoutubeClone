@@ -226,6 +226,12 @@ h1 {
   }
 }
 
+@media (max-width:450px) {
+  .sidebar:first-child{
+    display: none;
+  }
+}
+
 /* Keyword */
 
 .keywords{
