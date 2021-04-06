@@ -192,7 +192,7 @@ h1 {
 }
 
 
-@media (max-width: 625px) {
+@media (max-width: 1325px) {
   .header__search {
     display: none;
   }
@@ -208,7 +208,7 @@ h1 {
   }
 }
 
-@media (min-width: 626px) {
+@media (min-width: 1326px) {
   .sidebar:first-child{
     display: none;
   }
