@@ -38,11 +38,11 @@ let result2;
 
 result2 = _(students)
   .groupBy("classId")
-  .map(function (v, i) {
+  .map(function (value, key) {
     return {
-      classId: i,
-      className: _.get(_.find(v, "className"), "className"),
-      students: v,
+      classId: key,
+      className: _.get(_.find(value, "className"), "className"),
+      students: value,
     };
   })
   .value();

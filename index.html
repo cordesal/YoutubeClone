@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtube clone</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+    <script src="http://code.jquery.com/jquery-git2.js"></script>
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+
     <!-- header starts -->
     <div class="header">
         <div class="header__left">
-            <i class="material-icons">menu</i>
+            <button id= "toggle"><i class="material-icons">menu</i></button>
             <img src="https://www.youtube.com/about/static/svgs/icons/brand-resources/YouTube-logo-full_color_light.svg?cache=72a5d9c"
                 alt="">
         </div>
@@ -24,16 +25,17 @@
                 <button><i class="material-icons">search</i></button>
             </form>
         </div>
-        <div class="header__incons">
-            <i class=material-icons>videocam</i>
-            <i class=material-icons>apps</i>
-            <i class=material-icons>notifications</i>
-            <i class=material-icons>account_circle</i>
+        <div class="header__icons">
+            <button class="material-icons" for="slide-sidebar">search</button>
+            <!-- <i class="material-icons">search</i> -->
+            <i class="material-icons">videocam</i>
+            <i class="material-icons">apps</i>
+            <i class="material-icons">notifications</i>
+            <i class="material-icons">account_circle</i>
         </div>
     </div>
+
     <!-- header ends  -->
-    
-    <!-- main doby starts -->
     <div class="mainBody">
         <div class="sidebar">
             <div class="sidebar__categories">
@@ -54,7 +56,7 @@
                     <span>Library</span>
                 </div>
             </div>
-        </div>  
+        </div>
         <!-- Sidebar starts -->
         <div class="sidebar">
             <div class="sidebar__categories">
@@ -143,7 +145,8 @@
                         </div>
                         <div class="title">
                             <h3>
-                                This is the youtube long header for long header long header for long header long header for long header long header for long header
+                                This is the youtube long header for long header long header for long header long header
+                                for long header long header for long header
 
                             </h3>
                             <a href="">Author</a>
@@ -163,7 +166,8 @@
                         </div>
                         <div class="title">
                             <h3>
-                                This is the youtube long header for long header long header for long header long header for long header long header for long header
+                                This is the youtube long header for long header long header for long header long header
+                                for long header long header for long header
 
                             </h3>
                             <a href="">Author</a>
@@ -183,7 +187,8 @@
                         </div>
                         <div class="title">
                             <h3>
-                                This is the youtube long header for long header long header for long header long header for long header long header for long header
+                                This is the youtube long header for long header long header for long header long header
+                                for long header long header for long header
 
                             </h3>
                             <a href="">Author</a>
@@ -203,7 +208,8 @@
                         </div>
                         <div class="title">
                             <h3>
-                                This is the youtube long header for long header long header for long header long header for long header long header for long header
+                                This is the youtube long header for long header long header for long header long header
+                                for long header long header for long header
                             </h3>
                             <a href="">Author</a>
                             <span>10M views - 3 hours ago</span>
@@ -287,8 +293,8 @@
                     </div>
                 </div>
                 <!-- Single video Ends -->
-                 <!-- Single video Starts -->
-                 <div class="video">
+                <!-- Single video Starts -->
+                <div class="video">
                     <div class="video__thumbnail">
                         <img src="thumbnail.jpg" alt="">
                     </div>
@@ -306,8 +312,8 @@
                     </div>
                 </div>
                 <!-- Single video Ends -->
-                 <!-- Single video Starts -->
-                 <div class="video">
+                <!-- Single video Starts -->
+                <div class="video">
                     <div class="video__thumbnail">
                         <img src="thumbnail.jpg" alt="">
                     </div>
@@ -325,8 +331,8 @@
                     </div>
                 </div>
                 <!-- Single video Ends -->
-                 <!-- Single video Starts -->
-                 <div class="video">
+                <!-- Single video Starts -->
+                <div class="video">
                     <div class="video__thumbnail">
                         <img src="thumbnail.jpg" alt="">
                     </div>
@@ -344,8 +350,8 @@
                     </div>
                 </div>
                 <!-- Single video Ends -->
-                 <!-- Single video Starts -->
-                 <div class="video">
+                <!-- Single video Starts -->
+                <div class="video">
                     <div class="video__thumbnail">
                         <img src="thumbnail.jpg" alt="">
                     </div>
@@ -363,8 +369,8 @@
                     </div>
                 </div>
                 <!-- Single video Ends -->
-                 <!-- Single video Starts -->
-                 <div class="video">
+                <!-- Single video Starts -->
+                <div class="video">
                     <div class="video__thumbnail">
                         <img src="thumbnail.jpg" alt="">
                     </div>
@@ -382,8 +388,8 @@
                     </div>
                 </div>
                 <!-- Single video Ends -->
-                 <!-- Single video Starts -->
-                 <div class="video">
+                <!-- Single video Starts -->
+                <div class="video">
                     <div class="video__thumbnail">
                         <img src="thumbnail.jpg" alt="">
                     </div>
@@ -401,8 +407,8 @@
                     </div>
                 </div>
                 <!-- Single video Ends -->
-                 <!-- Single video Starts -->
-                 <div class="video">
+                <!-- Single video Starts -->
+                <div class="video">
                     <div class="video__thumbnail">
                         <img src="thumbnail.jpg" alt="">
                     </div>
@@ -420,8 +426,8 @@
                     </div>
                 </div>
                 <!-- Single video Ends -->
-                 <!-- Single video Starts -->
-                 <div class="video">
+                <!-- Single video Starts -->
+                <div class="video">
                     <div class="video__thumbnail">
                         <img src="thumbnail.jpg" alt="">
                     </div>
@@ -442,7 +448,14 @@
             </div>
         </div>
     </div>
-    <!-- main boyd ends -->
+    <!-- main body ends -->
 </body>
+<script>
+    $("#toggle").click(function () {
+   $(".sidebar").toggleClass('unhidden');
+   console.log('test')
+   })
+
+</script>
 
 </html>
