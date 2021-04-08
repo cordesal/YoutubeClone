@@ -208,7 +208,7 @@ h1 {
   display: none;
 }
 
-/* responsive for smal screen */
+/* responsive for small screen */
 @media (max-width: 1325px) {
   .header__search {
     display: none;

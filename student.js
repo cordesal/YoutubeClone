@@ -9,15 +9,17 @@ let students = [
   { id: 8, name: "tran van h", className: "test", classId: 14 },
   { id: 9, name: "tran van i", className: "test", classId: 14 },
   { id: 10, name: "tran van j", className: "test", classId: 14 },
+  { id: 11, name: "tran van k", className: "test", classId: 15 }
 ];
 
 //normal javascript
 let map = students.reduce(function(obj, student) {
     let key = `${student.classId}.${student.className}`;
+    console.log(key);
     obj[key] = obj[key] || {
       classId: student.classId,
       className: student.className,
-      students: []
+      students: [] 
     };
     obj[key].students.push({
         id: student.id,
