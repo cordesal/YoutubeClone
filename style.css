@@ -252,12 +252,20 @@ h1 {
   }
 }
 
-@media (max-width:300px) {
+@media (max-width:800px) {
   .sidebar:first-child{
     display: none ;
   }
    .sidebar:nth-last-child(2).unhidden {
     display: inline-block;
+  }  
+}
+@media (min-width: 250px) {
+   .sidebar:first-child.unhidden {
+    display: inline-block;
+  }  
+  .sidebar:nth-last-child(2).unhidden {
+    display: none;
   }  
 }
 
